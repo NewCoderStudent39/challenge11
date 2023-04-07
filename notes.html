@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/480d7ffae6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="project-header">
+        <div id="project-title">
+            <h1> Note Taker Application</h1>
+        </div>
+        <div id="save-icon">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </div>
+        <div id="add-new-task-icon">
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </div>
+    <div id="applicaiton-body-container">
+        <div id="task-list-container">
+            <ul id="created-task-list">
+                <li>
+                    <div id="created-task">
+                        <h1> sample text</h1>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="new-task-creation-area">
+            <input type="text" id="task-title" placeholder="Task Title Here!">
+            <p id="task-description-container">
+                <textarea id="task-description" rows="4" cols="50"> 
+                    Enter your task description here!
+                </textarea>
+            </p>
+            <button type="button" id="task-submit-button" onclick="createTask()">Submit</button>
+        </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

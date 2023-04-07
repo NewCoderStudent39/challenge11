@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+    --var1 : black;
+    --var2: white;
+    --var3: AliceBlue;
+    --var4: lightGray;
+    --var5: turquoise;
+    --var6: deepSkyBlue;
+    --var7: magenta;
+    --var8: lime;
+    --var9: navy;
+    --var10: PaleTurquoise;
+}
+
+#home-page-header {
+    background-color: var(--var3);
+    display: flex;
+    height: 100px;
+    border-bottom: 5px solid var(--var1);
+}
+
+#home-page-title {
+    margin-left: 30%;
+    margin-top: 20px;
+    font-size: 20px;
+    background-image: linear-gradient(-225deg, var(--var9) 0%, var(--var6) 33%,
+    var(--var5) 66%, var(--var8) 100%);
+    background-size: auto auto;
+    background-size: 200%, auto;
+    color: var(--var2);
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+}
+
+#card-container {
+    background-color: var(--var2);
+    height: 100vh;
+    display: flex;
+}
+
+#card {
+    width: 50vw;
+    margin-top: 5%;
+    margin-left: 22%;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--var4);
+    box-shadow: 0 0 10px 2px;
+    border-radius: 10px;
+}
+
+#project-description {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 20px;
+    padding-bottom: 25px;
+}
+
+#btn {
+    background-color: var(--var5);
+    color: var(--var2);
+    padding: 25px 50px;
+    border-radius: 15px;
+    margin-left: 45%;
+    margin-top: 200px;
+    font-size: 20px;
+}
