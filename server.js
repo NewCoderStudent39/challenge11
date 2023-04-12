@@ -14,6 +14,7 @@ app.use(express.static('public'));
 
 app.get('/api/notes', function(req, res) {
     res.sendFile(path.join(__dirname, './db/db.json'));
+    // res.fs.readFile('db/db.json', 'utf8');
 })
 
 app.post('/api/notes', function(req, res) {

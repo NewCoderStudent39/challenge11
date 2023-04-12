@@ -4,6 +4,7 @@ let saveNoteBtn;
 let newNoteBtn;
 let noteList;
 
+
 if (window.location.pathname === '/notes') {
   noteTitle = document.getElementById('task-title');
   noteText = document.getElementById('task-description');
@@ -68,6 +69,7 @@ const show = (elem) => {
       title: noteTitle.value,
       text: noteText.value,
     };
+    console.log(newNote);
     saveNote(newNote).then(() => {
       getAndRenderNotes();
       renderActiveNote();
@@ -112,7 +114,9 @@ const handleRenderSaveBtn = () => {
 };
 
 const renderNoteList = async (notes) => {
-  let jsonNotes = await notes.json();
+  // getNotes().then((data) => {console.log(data)}); 
+  // let jsonNotes = JSON.parse(fs.readFileSync('../../db/db.json'));
+  // console.log(jsonNotes);
   if (window.location.pathname === '/notes') {
     noteList.forEach((el) => (el.innerHTML = ''));
   }
